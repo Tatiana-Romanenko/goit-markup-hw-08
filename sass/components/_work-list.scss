@@ -1,12 +1,11 @@
 .work-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+
   justify-content: center;
   align-items: center;
-
-  &__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
 
   &__link {
     display: block;
@@ -73,17 +72,23 @@
 }
 
 .work-list__img {
-  min-width: 100%;
+  width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .work-list__item {
+    flex-basis: 100%;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .work-list {
     flex-direction: row;
-    flex-wrap: wrap;
+
     justify-content: flex-start;
-    margin-left: -30px;
-    margin-top: -30px;
 
     &__item {
       flex-basis: calc(100% / 2 - 30px);

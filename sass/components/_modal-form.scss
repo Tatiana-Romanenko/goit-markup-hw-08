@@ -1,3 +1,13 @@
+.modal-form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-color);
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -61,10 +71,10 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.01em;
     color: var(--secondary-color);
     margin-top: 20px;
-    margin-left: auto;
+    margin-left: 8px;
     margin-right: auto;
 
     &::before {
@@ -139,15 +149,6 @@
   .modal-form__term:focus + & {
     box-shadow: 0 0 0 2px #2196f3;
   }
-}
-
-.modal-form-title {
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--main-color);
 }
 
 @media screen and (min-width: 1200px) {
