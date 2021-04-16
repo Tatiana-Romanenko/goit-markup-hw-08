@@ -526,7 +526,7 @@ img {
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
-    bottom: 0;
+    bottom: 3px;
     left: 0;
   }
   .contact-list {
@@ -594,6 +594,9 @@ img {
   .tel-icon {
     width: 10px;
     height: 16px;
+  }
+  .current::after {
+    bottom: 0;
   }
 }
 
